@@ -56,6 +56,20 @@ CREATE TABLE Prescription (
         FOREIGN KEY (AppointmentID) REFERENCES Appointment(AppointmentID)           -- the key must be already present in the appointment table
         ON DELETE CASCADE                                                           -- the record cannot first be deleted in this table as long as it is present in the appointment table (parent)
 );
+select * from prescription;
+
+delete from prescription where appointmentid = '2'; 
+
+
+
+
+
+
+
+
+
+
+
 
 
 -- Create a table to store medication for the appointment

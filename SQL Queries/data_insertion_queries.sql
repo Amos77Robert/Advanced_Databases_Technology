@@ -1,5 +1,4 @@
 
-
 -- Check uploaded data in each table;
 select * from department;
 select * from doctor;
