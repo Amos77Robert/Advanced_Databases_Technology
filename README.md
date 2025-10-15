@@ -60,9 +60,15 @@ The system includes six main tables:
 ---
 
 ## Sample Queries
-- **Retrieve Appointments with Doctor and Patient Names**
+- **Retrieve appointments with doctor and patient names, and patient diagnosis**
 ```sql
 SELECT appointment.AppointmentID, patient.FullName AS PatientName, doctor.FullName AS DoctorName, appointment.Diagnosis
 FROM Appointment
 JOIN Patient ON appointment.PatientID = patient.PatientID
 JOIN Doctor ON appointment.DoctorID = doctor.DoctorID;
+
+```  
+## Usage  
+- **How to clone the project**  
+```sql  
+git clone https://github.com/Amos77Robert/Advanced_Databases_Technology.git
